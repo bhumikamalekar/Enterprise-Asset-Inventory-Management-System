@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background: #f5f7fb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+}
+
+.page-container {
+  padding: 24px;
+}
+
+.kpi-card {
+  border-radius: 10px;
+  transition: all .2s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-row {
+  background-color: #fff3cd !important;
+  animation: highlightFade 3s ease;
+}
+
+@keyframes highlightFade {
+  0% {
+    background-color: #ffe58f;
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+.highlight {
+  background-color: #ffe58f !important;
+  transition: background 1s;
+}
+
+.best-row {
+  background-color: #cbeeb0 !important;
+  border-left: 5px solid #cdf7b7;
+  font-weight: 600;
+}
+
+.best-row {
+  background-color: #d9f7be !important;
+  font-weight: 600;
+}
